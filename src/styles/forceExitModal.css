@@ -1,0 +1,69 @@
+.forceExitModal {
+    width: 100%;
+    height: 70%;
+
+    position: absolute;
+    bottom: 21%;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 300px;
+    height: 170px;
+    border: 1px solid #797979;
+
+    border-radius: 25px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.forceExitModal__content {
+
+}
+
+.forceExitText__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+
+    font-size: 14px;
+}
+
+.forceExitBtn__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.forceExitBtn__wrapper > button {
+    width: 56px;
+    height: 40px;
+    border: 1px solid #797979;
+    border-radius: 5px;
+    font-size: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.forceExitBtn__wrapper > button:first-child {
+    background-color: #95F204;
+}
+
+.forceExitBtn__wrapper > button:last-child {
+    background-color: #EC808D;
+}

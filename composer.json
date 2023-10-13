@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "psr-4": {
+      "server\\": "server",
+      "Models\\": "server/Models/",
+      "Controllers\\": "server/Controllers/"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "ext-json": "*",
+    "ext-pdo": "*"
+  }
+}

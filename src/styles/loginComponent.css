@@ -1,0 +1,148 @@
+.loginComponent {
+    width: 1024px;
+    height: 768px;
+    background-color: #F8FFFF;
+    border: 1px solid black;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.header__loginComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.header__wrapper > h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #0000AA;
+}
+
+#submitForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    margin-top: 70px;
+}
+
+.input__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#submitForm input {
+    width: 300px;
+    height: 25px;
+
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 13px;
+    color: #333333;
+    padding-left: 3px;
+
+    border-radius: 10px;
+    border: 1px solid #0000aa;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#validation-error {
+    font-size: 13px;
+    color: #D9001B;
+    height: 72px;
+    width: 320px;
+}
+
+#error__wrapper {
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; / start showing ellipsis when 3rd line is reached /
+white-space: pre-wrap;
+}
+
+#error__wrapper p {
+    text-indent: 20px;
+    cursor: default;
+}
+
+#submitForm > button {
+    border-radius: 10px;
+    border: none;
+
+    width: 257px;
+    height: 73px;
+    background-color: #ACB1E5;
+
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.validated {
+    background-color: #0000AA !important;
+}
+
+.version {
+    display: flex;
+    justify-content: flex-end;
+
+    color: #0000AA;
+    margin-right: 24px;
+    margin-bottom: 10px;
+}
+
+.tooltip-text {
+    opacity: 0;
+    width: 320px;
+    height: 140px;
+    background-color: #FCFDD8;
+    border: 1px solid #797979;
+    color: #D9001B;
+    text-align: left;
+    border-radius: 15px;
+    padding: 5px;
+    left: 58%;
+    top: 34%;
+
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+
+    position: absolute;
+    z-index: 1;
+    transition: .2s;
+}
+
+.tooltip-text p {
+    text-indent: 8px;
+}
+
+.show-tooltip:hover .tooltip-text {
+    opacity: 1;
+    transition: .2s;
+}

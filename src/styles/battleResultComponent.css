@@ -1,0 +1,84 @@
+.battleResultComponent {
+    width: 1024px;
+    height: 768px;
+    background-color: #F8FFFF;
+    border: 1px solid black;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.game-result_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.game-result_text > p {
+    font-size: 13px;
+    color: #0000AA;
+}
+
+.game-result_text .winner {
+    color: #63A103;
+    font-size: 23px;
+}
+
+.game-result_text .loser {
+    color: #D9001B;
+    font-size: 23px;
+}
+
+.game-result-nicknames_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 13px;
+    color: #0000AA;
+    margin-top: 80px;
+}
+
+.battle-fields {
+    gap: 105px;
+    margin-top: 20px;
+}
+
+.game-result-buttons_wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+
+    margin-top: 10px;
+}
+
+.game-result_btn {
+    width: 140px;
+    height: 40px;
+    background-color: #0000AA;
+
+    font-size: 13px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+    transition: .2s;
+}
+
+.game-result_btn:hover {
+    background-color: rgba(0, 0, 170, 0.8);
+}
+
+.battleResultComponent .version-prepare {
+    margin-top: 45px;
+}

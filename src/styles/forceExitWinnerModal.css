@@ -1,0 +1,24 @@
+.forceExitWinnerModal {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(51, 51, 51, 0.21);
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectionLostText__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+}
+
+.connectionLostText__wrapper > p {
+
+}

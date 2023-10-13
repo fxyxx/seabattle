@@ -1,0 +1,18 @@
+.notFoundComponent {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundComponent > h1 {
+    font-family: Arial, sans-serif;
+    font-size: 130px;
+    color: #333333;
+}
+
+.notFoundComponent > p {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333333;
+}

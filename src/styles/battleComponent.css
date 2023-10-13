@@ -1,0 +1,163 @@
+.battleComponent {
+    width: 1024px;
+    height: 768px;
+    background-color: #F8FFFF;
+    border: 1px solid black;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.timer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer > p:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: #0000AA;
+}
+
+.timer > p:last-child {
+    font-size: 18px;
+    color: #0000AA;
+}
+
+.attempts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    margin-top: 50px;
+}
+
+.attempts__wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.attempts__wrapper > p {
+    width: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: #0000AA;
+}
+
+.attempts__quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+    color: #9B1829;
+    font-size: 18px;
+
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.battle-fields {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 340px;
+}
+
+.battlefield-my__cells {
+    display: grid;
+    grid-template-columns: repeat(10, 25px);
+}
+
+.battlefield-opponent__cells {
+    display: grid;
+    grid-template-columns: repeat(10, 25px);
+}
+
+.battlefield-opponent__cells:hover {
+    cursor: url("../../public/images/cursor.svg") 16 16, auto;
+}
+
+.turn {
+    background-color: #DEFCBC;
+    padding: 5px;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.turn::after {
+    content: 'Хід';
+    position: absolute;
+    bottom: 120%;
+    right: 13%;
+    width: 80%;
+    color: #0000AA;
+    font-size: 13px;
+}
+
+.hit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 2;
+}
+
+.miss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 2;
+}
+
+.battlefield__column > .turn-overlay {
+    position: absolute;
+    top: 9%;
+    right: -2%;
+    width: 262px;
+    height: 262px;
+    border-radius: 15px;
+    background: #0088ff87 url("../../public/images/turn-gif.gif") center;
+    border: 3px solid #0000AA;
+    z-index: 5;
+}
+
+.battlefield__column .turn-overlay_text {
+    display: none;
+}
+
+.battlefield__column .turn-overlay > .turn-overlay_text {
+    display: block;
+    text-align: center;
+    margin-top: 23px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #0000AA;
+
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+}
+
+.battleComponent > .version-prepare {
+    margin-top: 90px;
+}

@@ -1,0 +1,21 @@
+@import "loginComponent.css";
+@import "prepareComponent.css";
+@import "battleComponent.css";
+@import "battleResultComponent.css";
+
+@import "notFoundComponent.css";
+@import "redirectComponent.css";
+
+@import "forceExitModal.css";
+@import "connectionLostModal.css";
+
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-style: normal;
+}
